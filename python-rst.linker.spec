@@ -3,7 +3,7 @@
 %bcond_without	doc	# documentation (uses python2, needs repository metadata)
 %bcond_without	tests	# py.test tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 %if %{without python2}
 %undefine	with_doc
@@ -12,7 +12,7 @@ Summary:	rst.linker - Python 2 Sphinx plugin to add links to the changelog
 Summary(pl.UTF-8):	rst.linker - wtyczka Sphinksa dla Pythona 2 do dodawania odnośników do changeloga
 Name:		python-rst.linker
 Version:	1.11
-Release:	4
+Release:	5
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/rst.linker/
